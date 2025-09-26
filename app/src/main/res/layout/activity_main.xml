@@ -13,10 +13,36 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:background="@color/btm"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#609ADF"
+        app:layout_constraintBottom_toBottomOf="@id/nav_view"
+        app:layout_constraintEnd_toEndOf="@id/nav_view"
+        app:layout_constraintStart_toStartOf="@id/nav_view"
+        app:layout_constraintTop_toTopOf="@id/nav_view"
+        app:tint="@null" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

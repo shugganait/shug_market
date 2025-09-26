@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">shug_market</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">image</string>
+    <string name="all">ВСЕ</string>
+    <string name="ty_dolla">$</string>
+    <string name="categories">Категории</string>
+    <string name="decline">Отклонить</string>
+    <string name="accept">Принять</string>
+    <string name="suggest_for_categories">Choose your preferred</string>
+    <string name="category">Категория</string>
+    <string name="rating">Оценка</string>
+    <string name="price">Цена</string>
+    <string name="test_desc">The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.</string>
+    <string name="add_to_cart">ДОБАВИТЬ В КОРЗИНУ</string>
+    <string name="go_to_cart">КОРЗИНА</string>
+    <string name="add_something">Добавить</string>
+    <string name="empty">Пусто</string>
+    <string name="buy">КУПИТЬ</string>
+    <string name="description">Описание</string>
+    <string name="catalogue">Каталог</string>
+    <string name="seacrh">Поиск</string>
 </resources>

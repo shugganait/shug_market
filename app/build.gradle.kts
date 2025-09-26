@@ -1,12 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
-
-    id("com.google.devtools.ksp")
 }
 
 android {
     namespace = "by.samal.shug_market"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "by.samal.shug_market"
@@ -49,10 +47,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
 
     // Room Database
-    implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.runtime)
-    ksp(libs.androidx.room.compiler)
-    androidTestImplementation(libs.androidx.room.testing)
+    annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.androidx.room.common)
 
     //Glide

@@ -7,12 +7,16 @@
 
     <fragment
         android:id="@+id/productsFragment"
-        android:name="by.samal.shug_market.ProductsFragment"
+        android:name="by.samal.shug_market.ui.ProductsFragment"
         android:label="fragment_products"
-        tools:layout="@layout/fragment_products" />
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_productsFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cartFragment"
-        android:name="by.samal.shug_market.CartFragment"
+        android:name="by.samal.shug_market.ui.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
 </navigation>
